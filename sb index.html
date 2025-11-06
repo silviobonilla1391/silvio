@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Silvio Bonilla Electricidad - Reparaciones Eléctricas</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
+    header { background: #222; color: white; padding: 20px; text-align: center; }
+    nav { background: #333; text-align: center; padding: 10px; }
+    nav a {
+      display: inline-block;
+      color: white;
+      background: #ffcc00;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover { background: #ff9900; transform: scale(1.05); }
+
+    .logo-sb {
+      font-family: 'Arial Black', sans-serif;
+      font-size: 48px;
+      font-weight: 900;
+      color: #ffcc00;
+      text-shadow: 2px 2px 0 #000;
+      margin-bottom: 10px;
+    }
+
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 { color: #222; text-align: center; }
+    ul { line-height: 1.8; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+    th { background-color: #333; color: white; }
+    footer { background: #222; color: white; text-align: center; padding: 10px; }
+
+    .btn {
+      display: inline-block;
+      background: #ffcc00;
+      color: #222;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn:hover { background: #ff9900; transform: scale(1.05); }
+
+    .btn-contacto {
+      display: inline-block;
+      background: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn-contacto:hover { background: #1ebe5d; transform: scale(1.05); }
+
+    /* Estilo del formulario */
+    form { display: flex; flex-direction: column; gap: 10px; max-width: 500px; margin: 20px auto; }
+    input, select, textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    textarea { resize: vertical; }
+    button {
+      background: #ffcc00;
+      color: #222;
+      font-weight: bold;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover { background: #ff9900; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-sb">SB</div>
+    <h1>Silvio Bonilla Electricidad</h1>
+    <p>Reparaciones eléctricas • Instalaciones • Mantenimiento • Emergencias 24h</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#precios">Precios</a>
+    <a href="#presupuesto">Presupuesto</a>
+    <a href="#ubicacion">Ubicación</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="inicio">
+    <h2>Bienvenido</h2>
+    <p>Silvio Bonilla Electricidad se especializa en <strong>reparaciones eléctricas</strong>, instalaciones y mantenimiento en <strong>Rosario, Colonia</strong>. Ofrecemos servicio confiable, rápido y profesional.</p>
+    <div style="text-align:center; margin-top:20px;">
+      <a href="#presupuesto" class="btn">💰 Pedir Presupuesto</a>
+    </div>
+  </section>
+
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <ul>
+      <li><strong>Reparaciones eléctricas</strong> residenciales y comerciales</li>
+      <li>Instalaciones nuevas y ampliaciones</li>
+      <li>Detección y corrección de fallas eléctricas</li>
+      <li>Iluminación y eficiencia energética</li>
+      <li>Emergencias 24 horas</li>
+    </ul>
+  </section>
+
+  <section id="precios">
+    <h2>Precios de Servicios</h2>
+    <table>
+      <tr><th>Trabajo</th><th>Descripción</th><th>Precio estimado (UYU)</th></tr>
+      <tr><td>Toma corriente</td><td>Instalación o reparación de tomas</td><td>$350 - $600</td></tr>
+      <tr><td>Luces</td><td>Colocación de lámparas o focos LED</td><td>$400 - $800</td></tr>
+      <tr><td>Artefactos</td><td>Instalación de calefones, electrodomésticos</td><td>$500 - $1,000</td></tr>
+      <tr><td>Tableros</td><td>Montaje de tableros eléctricos</td><td>$2,000 - $4,000</td></tr>
+    </table>
+  </section>
+
+  <section id="presupuesto">
+    <h2>Solicitar Presupuesto</h2>
+    <p style="text-align:center;">Completá el formulario y envíalo directamente por WhatsApp:</p>
+
+    <form id="form-presupuesto">
+      <input type="text" id="nombre" placeholder="Tu nombre completo" required>
+      <input type="tel" id="telefono" placeholder="Teléfono o WhatsApp" required>
+      <select id="servicio" required>
+        <option value="">Seleccioná el tipo de trabajo</option>
+        <option value="tomas">Tomas de corriente</option>
+        <option value="luces">Luces / Iluminación</option>
+        <option value="artefactos">Artefactos eléctricos</option>
+        <option value="tableros">Tableros eléctricos</option>
+        <option value="otro">Otro</option>
+      </select>
+      <textarea id="mensaje" rows="4" placeholder="Detalles del trabajo o consulta..."></textarea>
+      <button type="submit">📨 Enviar por WhatsApp</button>
+    </form>
+  </section>
+
+  <section id="ubicacion">
+    <h2>Ubicación</h2>
+    <p>📍 Estamos en <strong>Rosario, Colonia, Uruguay</strong>.</p>
+    <iframe
+      src="https://www.google.com/maps?q=Rosario,+Colonia,+Uruguay&output=embed"
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p style="text-align:center;">Comunicate directamente por WhatsApp o correo:</p>
+    <div style="text-align:center; margin-top:20px;">
+      <a href="https://wa.me/59800000000" target="_blank" class="btn-contacto">💬 WhatsApp</a>098822046
+      <a href="mailto:silviobonilla@gmail.com" class="btn-contacto" style="background:#0078d7;">📧 Email</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Silvio Bonilla Electricidad — Reparaciones Eléctricas en Rosario, Colonia</p>
+  </footer>
+
+  <script>
+    document.getElementById("form-presupuesto").addEventListener("submit", function(e){
+      e.preventDefault();
+      const nombre = encodeURIComponent(document.getElementById("nombre").value);
+      const telefono = encodeURIComponent(document.getElementById("telefono").value);
+      const servicio = encodeURIComponent(document.getElementById("servicio").value);
+      const mensaje = encodeURIComponent(document.getElementById("mensaje").value);
+      const miWhatsApp = "59800000000"; // reemplazá con tu número real
+      const texto = `Hola, soy ${nombre}.\nTeléfono: ${telefono}\nServicio: ${servicio}\nDetalles: ${mensaje}`;
+      window.open(`https://wa.me/${miWhatsApp}?text=${texto}`, "_blank");
+    });
+  </script>
+
+</body>
+</html>
+
